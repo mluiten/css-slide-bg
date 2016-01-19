@@ -1,0 +1,93 @@
+<html>
+<head>
+  <style>
+  .bgslide-wrapper {
+    position: relative;
+    
+    width: 740px;
+    height: 80px;
+    
+    overflow: visible;
+    
+    margin: 20px 0;
+    
+  background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #fff 30%, #F1F5F9 100%);
+	background: -linear-gradient(top, #fff 30%, #F1F5F9 100%);
+	background: -moz-linear-gradient(top, #fff 30%, #F1F5F9 100%); 
+	}
+  
+  .bgslide {
+   -webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
+   
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+  
+  .bgslide--primary {
+    background-image: url(bg_slide-primary.png);
+    -webkit-animation: bgscroll-primary 60s infinite linear;
+  }
+  
+  .bgslide--secondary {
+    background-image: url(bg_slide-secondary.png);
+    -webkit-animation: bgscroll-secondary 80s infinite linear;
+  }
+  
+  .truck img {
+    position: absolute;
+    
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    
+    width: 72px;
+    bottom: -22px;
+        
+    -webkit-animation: wobble 400ms infinite linear;
+  }
+  
+@-webkit-keyframes wobble  {
+  0%  { -webkit-transform:  rotate(0deg); }
+  20%  { -webkit-transform:  rotate(2deg); }
+  50%  { -webkit-transform:  rotate(-2deg); }
+  100%  { -webkit-transform:  rotate(0deg); }
+}
+  
+  @-webkit-keyframes bgscroll-primary {
+    from {background-position: 0 0;}
+    to {background-position: -1280px 0;}
+  }
+  @-webkit-keyframes bgscroll-secondary {
+    from {background-position:-320px -2px;}
+    to {background-position:-1600px -2px;}
+  }
+  
+  .attribution {
+    font-size: 10px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="bgslide-wrapper">
+    <div class="bgslide bgslide--secondary"></div>
+    <div class="bgslide bgslide--primary"></div>
+    <div class="truck"><img src="truck16.png"></div>
+  </div>
+
+<div class="attribution">Truck icon made by <a href="http://www.unocha.org" title="OCHA">OCHA</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+</body>
+<html>
